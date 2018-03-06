@@ -1,0 +1,10 @@
+body {
+  color: #000;
+  font-size: 20px; }
+  body .header {
+    color: gold; }
+  body .wrapper {
+    max-width: 100ch; }
+
+html {
+  margin: 100px; }
