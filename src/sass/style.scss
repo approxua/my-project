@@ -1,0 +1,191 @@
+@import 'chank/header';
+
+.main-info-body {
+  display: flex;
+  padding: 200px 0;
+
+  div {
+    text-align: center;
+  }
+  div:nth-child(-n+3) {
+    padding-right: 30px;
+  }
+  a {
+    position: relative;
+    padding: 30px 0 20px 0;
+    font: 600 1.12rem $font-open ;
+    text-transform: uppercase;
+    color: #6a6a6a;
+    text-decoration: none;
+    i:before {
+      position: absolute;
+      color: #ec7366;
+      padding: 25px;
+      font-size: 21px;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+  a:hover {
+    color: $red;
+  }
+  a:before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    padding: 25px;
+    border: solid 1px #e5e5e5;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all 0.5s ease-in;
+    }
+  a:hover:before {
+    transition: all 0.5s ease-in;
+    transform: rotate(45deg);
+    border-color: #e95b4e;
+  }
+  a:after {
+    position: absolute;
+    content: '';
+    border: solid 1px #888;
+    width: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  p {
+    font: 300 .75rem $font-source ;
+    line-height: 1.66;
+    color: #b3b3b3;
+    margin: 0;
+    padding: 30px 10px;
+  }
+}
+
+.history {
+  display: flex;
+  font: 100% $font-source;
+  .monitor {
+    background: url("../img/Monitor.png")center no-repeat;
+    width: 506px;
+    height: 407px;
+  }
+  .history-block{
+    width: 50%;
+    margin-left: 80px;
+    h2 {
+      position: relative;
+      margin: 0 0 0 30px;
+      font-size: 2.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #6a6a6a;
+
+    }
+    h2:before {
+      position: absolute;
+      content: '';
+      border-left: solid 6px $red;
+      height: 100%;
+      margin-left: -30px;
+    }
+    p {
+      font-size: .875rem;
+      line-height: 2.07;
+      color: #999;
+      margin: 40px 0;
+    }
+  }
+  a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    width: 220px;
+    padding: 17px 0;
+    border: solid 1px $red;
+    border-radius: 2px;
+    background: $red;
+    line-height: 2.84;
+    text-transform: uppercase;
+    text-align: center;
+    font: 700 .875rem $font-open ;
+  }
+}
+.fluid-container {
+  display: flex;
+  height: 760px;
+  padding: 150px 0;
+}
+.fluid-box {
+  width: 55%;
+  background-color: #202020;
+  padding: 100px 0;
+}
+.fluid-photo {
+  width: 45%;
+  background: transparent url("../img/Tablet.jpg") no-repeat;
+  background-size: cover;
+}
+.slider-body {
+  max-width: 570px;
+  padding: 0 80px;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  .service-title {
+    font: 700 2.25rem $font-source;
+    text-transform: uppercase;
+    color: #f4f5f9;
+    position: relative;
+    margin: 45px 30px;
+  }
+  .service-title:after {
+    position: absolute;
+    content: '';
+    border-left: solid 6px $red;
+    height: 41px;
+    margin-left: 25px;
+  }
+  a {
+    text-decoration: none;
+    color: #828282;
+    position: relative;
+    h2 {
+      font: 600 1.12rem $font-open;
+      text-transform: uppercase;
+      line-height: 1.61;
+      color: $red;
+      margin: 0;
+    }
+    p {
+      font: .875rem $font-source;
+      line-height: 2.07;
+      margin: 5px 0;
+    }
+  }
+  a:nth-child(-n+3) {
+    margin-bottom: 30px;
+  }
+  a:before {
+    position: absolute;
+    padding: 10px;
+    border: solid 5px rgba(244, 245, 249, .5);
+    border-radius: 100%;
+    background: #f4f5f9;
+    color: $red;
+    font-size: 27px;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    height: 27px;
+    margin: auto 0 auto 52px;
+  }
+
+}
