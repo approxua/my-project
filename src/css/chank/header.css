@@ -3,7 +3,8 @@ header {
   background: transparent url("../img/Header.jpg") center center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  min-height: 820px; }
 
 .container {
   max-width: 1150px;
@@ -112,12 +113,14 @@ header {
   outline: none; }
   .header-slide p {
     font: 1.5rem "Source Sans Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    margin: 0; }
+    margin: 0;
+    letter-spacing: .05rem; }
   .header-slide h1 {
     font-size: 4.5rem;
     text-transform: uppercase;
-    padding: 35px 0 0 0;
-    margin: 0; }
+    padding: 15px 0 0 0;
+    margin: 0;
+    letter-spacing: .1rem; }
   .header-slide span {
     color: #e74e3e;
     font-size: 3.09rem;
