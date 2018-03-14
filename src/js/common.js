@@ -13,7 +13,14 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         arrows: false,
-        dots: true
+        dots: true,
+        dotsClass: 'serv-dots'
+    });
+    $('.case-slider').slick({
+        infinite: true,
+        arrows: false,
+        dots: true,
+        dotsClass: 'case-dots'
     });
 });
 
