@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function(){
+$(function () {
     $('.header-slider').slick({
         infinite: true,
         prevArrow: '<i class="icon-left-open arrow">',
@@ -21,6 +21,40 @@ $(document).ready(function(){
         arrows: false,
         dots: true,
         dotsClass: 'case-dots'
+    });
+    var a = 0;
+    $(window).scroll(function () {
+
+        var oTop = $('.awards-wrapper').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() >= oTop) {
+            $('#user').animateNumber({
+                    number: 3891
+                },
+                1000
+            );
+            $('#posts').animateNumber({
+                    number: 281
+                },
+                1000
+            );
+            $('#total').animateNumber({
+                    number: 618
+                },
+                1000
+            );
+            $('#campings').animateNumber({
+                    number: 178
+                },
+                1000
+            );
+            $('#features').animateNumber({
+                number: 285
+                },
+                1000
+            );
+            a = 1;
+        }
+
     });
 });
 

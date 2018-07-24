@@ -29,7 +29,8 @@ gulp.task('css-libs', ['sass'], function() {
 gulp.task('scripts', function() {
     return gulp.src([
         'src/js/libs/jquery-3.2.1.min.js',
-        'src/js/libs/slick.min.js'
+        'src/js/libs/slick.min.js',
+        'src/js/libs/jquery.animateNumber.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())

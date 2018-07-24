@@ -337,8 +337,11 @@
     }
   }
 }
+.fluid-case {
+  padding-top: 100px;
+}
 .case-study {
-  padding: 100px 0 50px 0;
+  padding-bottom: 50px;
   text-align: center;
 }
 .fluid-case {
@@ -346,6 +349,7 @@
 }
 .case-body {
   display: flex;
+  padding-bottom: 100px;
   .case-content {
     width: 50%;
     margin: auto 0;
@@ -456,5 +460,46 @@
   }
   .slick-active button {
     border: solid 6px $red;
+  }
+}
+.awards-wrapper {
+  background: transparent url("../img/Layer.jpg") center;
+  background-size: cover;
+  .awards {
+    display: flex;
+    justify-content: space-between;
+    font: 1.125rem $font-source;
+    color: #f4f5f9;
+    padding: 100px 0;
+    div {
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      position: relative;
+      text-align: center;
+    }
+    .awards-number {
+      font-size: 1.875rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 120px 0 5px 0;
+      color: #f4f5f9;
+    }
+    span {
+      line-height: 1.66;
+      color: #c9c4c6;
+    }
+    i:before {
+      position: absolute;
+      padding: 30px;
+      font-size: 31px;
+      color: white;
+      border: solid 1px white;
+      border-radius: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
   }
 }

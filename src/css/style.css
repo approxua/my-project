@@ -533,8 +533,11 @@ header {
     display: -ms-flexbox;
     display: flex; }
 
+.fluid-case {
+  padding-top: 100px; }
+
 .case-study {
-  padding: 100px 0 50px 0;
+  padding-bottom: 50px;
   text-align: center; }
 
 .fluid-case {
@@ -544,7 +547,8 @@ header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-bottom: 100px; }
   .case-body .case-content {
     width: 50%;
     margin: auto 0; }
@@ -671,3 +675,54 @@ header {
             border-radius: 100%; }
   .case-dots .slick-active button {
     border: solid 6px #e74e3e; }
+
+.awards-wrapper {
+  background: transparent url("../img/Layer.jpg") center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .awards-wrapper .awards {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font: 1.125rem "Source Sans Pro", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #f4f5f9;
+    padding: 100px 0; }
+    .awards-wrapper .awards div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding: 0 30px;
+      position: relative;
+      text-align: center; }
+    .awards-wrapper .awards .awards-number {
+      font-size: 1.875rem;
+      font-weight: 700;
+      line-height: 1;
+      padding: 120px 0 5px 0;
+      color: #f4f5f9; }
+    .awards-wrapper .awards span {
+      line-height: 1.66;
+      color: #c9c4c6; }
+    .awards-wrapper .awards i:before {
+      position: absolute;
+      padding: 30px;
+      font-size: 31px;
+      color: white;
+      border: solid 1px white;
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
